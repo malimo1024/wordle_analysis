@@ -1,7 +1,5 @@
 library(magrittr)
 
-setwd("~/wordle")
-
 # data from https://github.com/DevangThakkar/wordle_archive
 
 words <- readr::read_csv("words.csv") %>% 

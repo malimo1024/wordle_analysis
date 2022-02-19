@@ -49,7 +49,7 @@ answers_long_data <- answers_chr %>%
     dplyr::ungroup() %>%
     dplyr::mutate(alphabet = factor(alphabet, levels = rev(unique(alphabet))))
 
-notanswers_long_data <- words_chr %>%
+notanswers_long_data <- notanswers_chr %>%
     tidyr::pivot_longer(c(-id,contains("chr"))) %>%
     dplyr::rename(
         alphabet = value
